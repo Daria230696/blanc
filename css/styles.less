@@ -311,17 +311,20 @@ body {
     }
   }
 }
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
+.modal-active {
+  position: absolute;
+  right: 0;
   top: 0;
+  z-index: 1;
   width: 100%;
   height: 100%;
-  overflow: scroll;
   background-color: rgb(0,0,0);
   background-color: rgba(0,0,0,0.4);
+  transition: right 0.8s 0.3s, -webkit-transform 0.3s;
+}
+.modal {
+  right: -105%;
+  position: absolute;
 }
 
 .modal-content {

@@ -214,7 +214,7 @@
         </table>
     </section>
 </main>
-<div id="myModal" class="modal">
+    <div id="myModal" class="modal">
 
     <div class="modal-content">
         <div class="modal-header">
@@ -263,22 +263,23 @@
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script>
-    $('table').on('click','tr',function(){
+    $('table').on('click','tr',function() {
         var modal = document.getElementById("myModal");
         var span = document.getElementsByClassName("close")[0];
+        document.getElementById("myModal").className = "modal-active";
         modal.style.display = "block";
-        span.onclick = function() {
-            modal.style.display = "none";
+        span.onclick = function () {
+            document.getElementById("myModal").className = "modal";
         }
         window.onclick = function(event) {
             if (event.target == modal) {
-                modal.style.display = "none";
+                document.getElementById("myModal").className = "modal";
             }
         }
-    })
+    });
     $(document).ready(function(){
         $('.burger').on('click', function(evt){
-            $('.mob_menu, .burger').toggleClass('active')
+            $('.burger').toggleClass('active')
         });
 
         let scroll_factor = 100;
@@ -286,7 +287,7 @@
         function scroll_to(elem, target) {
             $(elem).on('click', function(evt){
                 evt.preventDefault()
-                $('.mob_menu, .burger').removeClass('active')
+                $('.burger').removeClass('active')
                 $('html,body').stop().animate({ scrollTop: $(target).offset().top - scroll_factor }, 1000)
             });
         }
