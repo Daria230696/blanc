@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Заявки</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header class="header">
+    <img src="img/logo.svg" alt="" class="logo">
+    <div class="burger"><span></span></div>
+    <div class="header-right">
+        <div class="header-right-wallet"><img src="img/wallet-2.svg" alt="">
+            <p>24 700 &#8381;</p></div>
+        <div class="header-right-private">
+            <a href="/"><img src="img/avatar.svg" alt=""></a>
+            <a href="/"><img src="img/out.svg" alt=""></a>
+        </div>
+    </div>
+</header>
+<div class="gorizontal-line"></div>
+<main class="applications">
+    <section class="applications-header">
+        <div class="applications-header-caption">
+            <h1>Заявки</h1>
+            <p>1 276</p>
+        </div>
+        <div class="applications-header-filter">
+            <select>
+                <option value="" class="option">Год</option>
+            </select>
+            <input class="calendar" type="date" >
+        </div>
+        <div class="applications-header-button">
+            <button class="btn-desktop">Создать заявку</button>
+            <button class="btn-mobile">+</button>
+        </div>
+    </section>
+    <section class="table">
+        <div class="table-expectation">
+            <a href="">
+                <div class="table-expectation-top">
+                    <div class="table-expectation-top-block">
+                        <p class="table-expectation-top-caption">В ожидании</p>
+                        <button class="table-expectation-top-btn"></button>
+                        <p class="table-expectation-top-number">154</p>
+                    </div>
+                </div>
+            </a>
+            <div class="table-expectation-bottom">
+                <div class="table-expectation-bottom-block"><span>Назначение встречи</span>
+                    <p>31</p></div>
+                <div class="table-expectation-bottom-block"><span>Встреча назначена </span>
+                    <p>123</p></div>
+            </div>
+        </div>
+        <div class="table-open">
+            <a href="">
+                <div class="table-expectation-top">
+                    <div class="table-expectation-top-block">
+                        <p class="table-expectation-top-caption">Открыто счетов</p>
+                        <button class="table-expectation-top-btn"></button>
+                        <p class="table-expectation-top-number">262</p>
+                    </div>
+                </div>
+            </a>
+            <div class="table-expectation-bottom">
+                <div class="table-expectation-bottom-block"><span>Активных</span>
+                    <p>207</p></div>
+                <div class="table-expectation-bottom-block"><span>Неактивных</span>
+                    <p>55</p></div>
+            </div>
+        </div>
+        <div class="table-refusal">
+            <a href="">
+                <div class="table-expectation-top">
+                    <div class="table-expectation-top-block">
+                        <p class="table-expectation-top-caption">В отказе</p>
+                        <button class="table-expectation-top-btn"></button>
+                        <p class="table-expectation-top-number">37</p>
+                    </div>
+                </div>
+            </a>
+            <div class="table-expectation-bottom">
+                <div class="table-expectation-bottom-block"><span>Банк</span>
+                    <p>14</p></div>
+                <div class="table-expectation-bottom-block"><span>Клиент</span>
+                    <p>10</p></div>
+                <div class="table-expectation-bottom-block"><span>Просрочено</span>
+                    <p>13</p></div>
+                <div class="table-expectation-bottom-block"><span>Закрыто</span>
+                    <p>13</p></div>
+            </div>
+        </div>
+        <div class="table-earnings">
+            <a href="">
+                <div class="table-expectation-top">
+                    <div class="table-expectation-top-block"><p class="table-expectation-top-caption">Ты заработал</p>
+                        <button class="table-expectation-top-btn"></button>
+                        <p class="table-expectation-top-number">20 533 500 ₽</p>
+                    </div>
+                </div>
+            </a>
+            <div class="table-expectation-bottom">
+                <div class="table-expectation-bottom-block"><span>За активные</span>
+                    <p> 10 310 500 ₽</p></div>
+                <div class="table-expectation-bottom-block"><span>За открытые</span>
+                    <p>10 223 000 ₽ </p></div>
+            </div>
+        </div>
+    </section>
+    <section class="filter-desktop">
+        <input type="text" placeholder="Расчетный счет">
+        <select>
+            <option value="" class="option">Статус заявки</option>
+        </select>
+    </section>
+    </section>
+    <section class="filter-mobile">
+        <input type="text" placeholder="Номер телефона или карты">
+            <button><img src="img/Settings.svg" alt=""></button>
+    </section>
+    <section class="list-desktop">
+        <table>
+            <tr class="list-desktop-caption">
+                <th>Создана</th>
+                <th></th>
+                <th>Компания</th>
+                <th>ИНН</th>
+                <th>Статус</th>
+            </tr>
+            <tr class="list-desktop-content" onclick="click()">
+                    <td>1 сентября</td>
+                    <td>14:45</td>
+                    <td>ООО «ПР-Консалтинг»</td>
+                    <td>938517492735</td>
+                    <td><img src="img/img1.svg" alt="">Назначение встречи</td>
+            </tr>
+            <tr class="list-desktop-content">
+                    <td>1 сентября</td>
+                    <td>14:43</td>
+                    <td>ООО «МИР ИДЕЙ»</td>
+                    <td>672940816473</td>
+                    <td><img src="img/img2.svg" alt="">Встреча назначена</td>
+
+            </tr>
+            <tr class="list-desktop-content">
+                    <td>31 августа</td>
+                    <td>14:07</td>
+                    <td>ООО «СТРОЙ-ПЕТРО-СБЫТ и партнёры...</td>
+                    <td>183926789365</td>
+                    <td><img src="img/img3.svg" alt="">Счёт открыт</td>
+            </tr>
+            <tr class="list-desktop-content">
+                    <td>31 августа</td>
+                    <td>17:58</td>
+                    <td>ИП Мартынов Сергей Петрович</td>
+                    <td>183724058214</td>
+                    <td><img src="img/img4.svg" alt="">Отказ банка</td>
+            </tr>
+            <tr class="list-desktop-content">
+                    <td>30 августа</td>
+                    <td>16:24</td>
+                    <td>ИП Воронин Арсений Михайлович</td>
+                    <td>758465926371</td>
+                    <td><img src="img/img5.svg" alt="">Встреча назначена</td>
+            </tr>
+        </table>
+    </section>
+    <section class="list-mobile">
+        <table>
+                <tr class="list-mobile-content">
+                    <td><img src="img/img1.svg" alt="">Назначение встречи</td>
+                    <td class="list-mobile-content-name">ООО «ПР-Консалтинг»</td>
+                </tr>
+                <tr class="list-mobile-info">
+                    <td>ИНН 938517492735</td>
+                    <td>1 сентября 14:45</td>
+                </tr>
+            <tr class="list-mobile-content">
+                <td><img src="img/img2.svg" alt="">Встреча назначена</td>
+                <td class="list-mobile-content-name">ООО «МИР ИДЕЙ»</td>
+            </tr>
+                <tr class="list-mobile-info">
+                    <td>ИНН 672940816473</td>
+                    <td>1 сентября 14:43</td>
+                </tr>
+
+            <tr class="list-mobile-content">
+                <td><img src="img/img3.svg" alt="">Счёт открыт</td>
+                <td class="list-mobile-content-name">ООО «СТРОЙ-ПЕТРО-СБЫТ и партнёры...</td>
+            </tr>
+            <tr class="list-mobile-info">
+                <td>ИНН 183926789365</td>
+                <td>31 августа 14:07</td>
+            </tr>
+            <tr class="list-mobile-content">
+                <td><img src="img/img4.svg" alt="">Отказ банка</td>
+                <td class="list-mobile-content-name">ИП Мартынов Сергей Петрович</td>
+            </tr>
+            <tr class="list-mobile-info">
+            <td>ИНН 183724058214</td>
+            <td>31 августа 17:58</td>
+            </tr>
+            <tr class="list-mobile-content">
+                <td><img src="img/img5.svg" alt="">Встреча назначена</td>
+                <td class="list-mobile-content-name">ИП Воронин Арсений Михайлович</td>
+            </tr>
+            <tr class="list-mobile-info">
+            <td>ИНН 758465926371</td>
+            <td>30 августа 16:24</td>
+            </tr>
+        </table>
+    </section>
+</main>
+<div id="myModal" class="modal">
+
+    <div class="modal-content">
+        <div class="modal-header">
+            <p>Заявка создана 1 июня в 14:23</p>
+            <span class="close">&times;</span>
+        </div>
+        <div class="modal-body">
+            <div class="modal-body-header">
+                <h2>ООО «Инстрой инвестмент»</h2>
+                <p>ИНН 154782356572356</p>
+                <p>ОГРН 15478293934</p>
+            </div>
+            <div class="modal-body-info">
+                <span>Контакты</span>
+                <p><img src="img/User.svg" alt="">Вознесенский Михаил Петрович</p>
+                <p><img src="img/phone.svg" alt="">+7 (999) 111-11-44</p>
+            </div>
+            <div class="modal-body-status">
+                <span>Текущий статус заявки</span>
+                <div class="modal-body-status-info">
+                    <p><img src="img/img2.svg" alt="">Встреча назначена</p>
+                    <p>31 сентября 11:02</p>
+                </div>
+                <p class="date">24 апреля в 18:30</p>
+                <p class="message">Отлично! Мы назначили встречу.
+                    В ближайшие дни менеджер подпишет с клиентом заявление
+                    на обслуживание в банке и соберёт необходимые данные для проверки.</p>
+            </div>
+            <div class="modal-body-history">
+                <span>История заявки</span>
+                <button><img src="img/arrow%20up.svg" alt=""></button>
+                <table>
+                    <tr>
+                        <td><img src="img/img2.svg" alt="">Счёт открыт</td>
+                        <td>2 июня 15:47</td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/img3.svg" alt="">Встреча назначена</td>
+                        <td>1 июня 12:32</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
+    $('table').on('click','tr',function(){
+        var modal = document.getElementById("myModal");
+        var span = document.getElementsByClassName("close")[0];
+        modal.style.display = "block";
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    })
+    $(document).ready(function(){
+        $('.burger').on('click', function(evt){
+            $('.mob_menu, .burger').toggleClass('active')
+        });
+
+        let scroll_factor = 100;
+
+        function scroll_to(elem, target) {
+            $(elem).on('click', function(evt){
+                evt.preventDefault()
+                $('.mob_menu, .burger').removeClass('active')
+                $('html,body').stop().animate({ scrollTop: $(target).offset().top - scroll_factor }, 1000)
+            });
+        }
+    });
+</script>
+</body>
+</html>
